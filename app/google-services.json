@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "445715058065",
+    "firebase_url": "https://techieblossomfirebase.firebaseio.com",
+    "project_id": "techieblossomfirebase",
+    "storage_bucket": "techieblossomfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445715058065:android:c39af1c36d99a4a1",
+        "android_client_info": {
+          "package_name": "com.techieblossom.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445715058065-0965oee615ian4c5irftig2eh5lupusq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "445715058065-0965oee615ian4c5irftig2eh5lupusq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdz1VeNuXCv_WdgtsHjse84KKRjL0iOj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
