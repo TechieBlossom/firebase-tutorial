@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    tools:context=".database.ui.MainActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/apps"
+        android:id="@+id/players"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_width="match_parent"
-        tools:listitem="@layout/line_item_app"
+        tools:listitem="@layout/line_item_player"
         android:visibility="gone"
         android:layout_height="match_parent" />
 

@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Firebase Database - Techie Blossom</string>
+    <string name="app_name">Firebase Login - Techie Blossom</string>
+    <string name="twitter_consumer_key" translatable="false">t3ZT1W2CwJ7gr5lykeHni6Wzc</string>
+    <string name="twitter_consumer_secret" translatable="false">6RDrDJvIsILWvBn1YuIrKNHlrU7lC9szTCq8d1HsNtPd2FamiW</string>
 </resources>

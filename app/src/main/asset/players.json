@@ -1,0 +1,52 @@
+{
+  "players": [
+    {
+      "name" : "Cristiano Ronaldo",
+      "country": "Portugal"
+    },
+    {
+      "name" : "Lionel Messi",
+      "country": "Argentina"
+    },
+    {
+      "name" : "Pele",
+      "country": "Brazil"
+    },
+    {
+      "name" : "Mohamed Salah",
+      "country": "Egypt"
+    },
+    {
+      "name" : "Diego Maradona",
+      "country": "Argentina"
+    },
+    {
+      "name" : "Sergio Ramos",
+      "country": "Spain"
+    },
+    {
+      "name" : "Robert Lewandowski",
+      "country": "Poland"
+    },
+    {
+      "name" : "De Gea",
+      "country": "Spain"
+    },
+    {
+      "name" : "Gonzalo Higuaín",
+      "country": "Argentina"
+    },
+    {
+      "name" : "Luis Suárez",
+      "country": "Uruguay"
+    },
+    {
+      "name" : "Neymar Jr",
+      "country": "Brazil"
+    },
+    {
+      "name" : "Sergio Aguero",
+      "country": "Argentina"
+    }
+  ]
+}
