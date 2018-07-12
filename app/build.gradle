@@ -34,6 +34,8 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-database:16.0.1'
+    //For Downloading image
+    implementation 'com.squareup.picasso:picasso:2.71828'
     // for Firebase Authentication
     implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
     implementation 'com.twitter.sdk.android:twitter-core:3.2.0'

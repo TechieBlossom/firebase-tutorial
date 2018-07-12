@@ -6,14 +6,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.techieblossom.firebase.R;
 import com.techieblossom.firebase.database.model.PlayerModel;
 
 import java.util.List;
 
-class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.AppViewHolder> {
+class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.PlayerViewHolder> {
 
     private List<PlayerModel> data;
     private Context context;
@@ -25,13 +27,13 @@ class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.AppViewHolder> {
 
     @NonNull
     @Override
-    public AppViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public PlayerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(context).inflate(R.layout.line_item_player, parent, false);
-        return new AppViewHolder(itemView);
+        return new PlayerViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AppViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull PlayerViewHolder holder, int position) {
         holder.bind(data.get(position));
     }
 
@@ -40,19 +42,26 @@ class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.AppViewHolder> {
         return data.size();
     }
 
-    static class AppViewHolder extends RecyclerView.ViewHolder {
+static class PlayerViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView playerName, playerDescription;
+    private TextView playerName, playerDescription;
+    private ImageView playerImage;
 
-        AppViewHolder(View itemView) {
-            super(itemView);
-            playerName = itemView.findViewById(R.id.playerName);
-            playerDescription = itemView.findViewById(R.id.playerDescription);
-        }
-
-        void bind(PlayerModel playerModel) {
-            playerName.setText(playerModel.getName());
-            playerDescription.setText(playerModel.getCountry());
-        }
+    PlayerViewHolder(View itemView) {
+        super(itemView);
+        playerName = itemView.findViewById(R.id.playerName);
+        playerDescription = itemView.findViewById(R.id.playerDescription);
+        playerImage = itemView.findViewById(R.id.playerImage);
     }
+
+    void bind(PlayerModel playerModel) {
+        playerName.setText(playerModel.getName());
+        playerDescription.setText(playerModel.getCountry());
+        Picasso.get()
+                .load(playerModel.getImage())
+                .placeholder(R.drawable.ic_player_placeholder)
+                .error(R.drawable.ic_error)
+                .into(playerImage);
+    }
+}
 }
